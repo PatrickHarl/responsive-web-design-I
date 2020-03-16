@@ -1,3 +1,506 @@
 /* Use your own code or past solution for Great Idea Web Page CSS here! */
 
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
 
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* Set every element's box-sizing to border-box */
+* {
+    box-sizing: border-box;
+    
+	
+}
+
+html, body {
+    height: 100%;
+    font-family: 'Titillium Web', sans-serif;
+}
+
+h1, h2, h3, h4, h5 {
+    font-family: 'Bangers', cursive;
+    letter-spacing: 1px;
+    margin-bottom: 15px;
+}
+
+/* Copy and paste your work from yesterday here and start to refactor into flexbox */
+
+
+
+.website {
+
+	width:50%;
+	margin:0 auto;
+
+}
+
+.nav-links{
+
+	
+    width:100%;
+    display:flex;
+	justify-content:space-between;
+    align-items:center;
+    padding-top:4%;
+	
+	
+	
+
+}
+.nav-links a{
+
+	color:grey;
+	text-decoration:none;
+	
+
+}
+.nav-links a:hover{
+
+	animation-name:nav-anim;
+	animation-duration: 1.5s;
+	  
+
+}
+.logo-container{
+    width:18%;
+}
+.logo {
+
+	
+	width:100%;
+	height:3.5vh;
+	padding-top:3px;
+	
+	
+
+}
+header {
+
+	display:flex;
+
+}
+.page-header {
+
+	
+	width:50%;
+	display:flex;
+	align-items:center;
+	flex-direction:column;
+	justify-content:center;
+	padding-top:30px;
+	
+
+}
+.page-header h1 {
+
+	font-size:75px;
+	text-align:center;
+	
+
+}
+.start-button {
+
+	border:1px solid grey;
+	width:125px;
+	text-align:center;
+	margin:0 auto;
+	padding:3px 0px;
+
+}
+.header-img {
+
+
+	
+	padding-top:50px;
+	padding-left:95px;
+	width:50%;
+	
+
+}
+
+.mid-section-info {
+
+	border-top:1px solid black;
+	border-bottom:1px solid black;
+	margin-top:10%;
+
+}
+
+.mid-section-top {
+
+
+    display:flex;
+    justify-content:space-between;
+    
+    
+
+}
+.features {
+
+
+	width:49.5%;
+	padding:4% 0;
+	
+
+}
+.about {
+
+	
+	width:49.5%;
+	padding:4% 0;
+	
+
+}
+.middle-img {
+
+	
+	width:100%;
+
+}
+.mid-section-bot {
+
+
+	display:flex;
+	justify-content:space-between;
+
+}
+.services {
+
+	
+	padding:4% 0;;
+	width:31%;
+	
+	
+
+}
+
+.product {
+
+	
+	padding:4% 0;
+	width:31%;
+	
+	
+
+}
+.vision {
+
+	
+	padding:4% 0;
+	width:31%;
+	
+	
+
+}
+.contact {
+
+	padding-top:30px;
+
+}
+.copywrite {
+
+
+		text-align:center;
+		margin-top:50px;
+
+}
+
+@keyframes nav-anim {
+	0% {color: grey;}
+	50% {color: #1871ff;}
+	100% {color:grey;}
+  }
+
+  /* Services css below */
+
+  .window-services {
+
+	width:46%;
+	margin:0 auto;
+
+  }
+  .header-top-wrapper {
+
+
+	
+	display:flex;
+	justify-content:space-between;
+	align-items:center;
+	margin-bottom:12px;
+	margin-top:12px;
+	
+
+  }
+  .header-top-links{
+      width:70%;
+      display:flex;
+      justify-content:space-between;
+      align-items:center;
+  }
+  .header-top-wrapper a {
+
+	text-decoration:none;
+	color:grey;
+
+  }
+  .services-header-img {
+
+	width:100%;
+
+  }
+  .services-title {
+
+	margin:20px 0px 15px 0px;
+
+  }
+  .services-title h1{
+
+	font-size:22px;
+
+  }
+  .services-title p {
+
+	margin-bottom:35px;
+
+  }
+  .learn-more {
+
+	width:100%;
+	border-top:1px solid grey;
+	border-bottom:1px solid grey;
+	display:flex;
+	flex-wrap:wrap;
+	justify-content:space-between;
+	padding-top:35px;
+	
+	
+
+  }
+  .learn-more-tab {
+
+	width:48%;
+	border:1px solid grey;
+	padding:20px 15px 15px 15px;
+	margin-bottom:35px;
+	background-color:#ebe9e7;
+
+  }
+  .learn-more-btn {
+
+		display:flex;
+		border:1px solid grey;
+		width:32%;
+		font-size:12px;
+		padding:7px 0px;
+		background-color:white;
+		border-radius:4px;
+		margin-top:17px;
+		justify-content: center;
+		align-content: center;
+
+  }
+  ul {
+
+	list-style-type:square;
+
+  }
+  .window-services footer {
+
+	display:flex;
+	margin-top:35px;
+
+  }
+  .text-footer {
+
+	
+	
+	padding-right:50px;
+
+  }
+  .list {
+
+	padding-top:25px;
+	padding-left:20px;
+
+  }
+  li {
+
+	line-height:1.8;
+
+  }
+  .copyright {
+
+	text-align:center;
+	margin-top:75px;
+
+
+  }
+  .anchor-links{
+      width:70%;
+      display:flex;
+      justify-content:space-between;
+      align-items:center;
+  }
+@media (max-width:800px){
+
+    .nav-links, .header-top-wrapper{
+        display:flex;
+        flex-direction:column-reverse;
+        padding:0;
+        margin:0;
+    }
+    .logo-container{
+        width:20%;
+        display:flex;
+        justify-content:center;        
+    }
+    .logo{
+        width:100%;
+        height:3.1vh;
+        margin:20% 0;
+        padding:0;
+    }
+    .anchor-links, .header-top-links{
+        width:95%;
+        display:flex;
+        justify-content:space-around;
+        align-items:center;
+    }
+    .header-top-links{
+        margin:0 0 4% 0;
+    }
+    .anchor-links a{
+        font-size:75%;
+    }
+    .header-img{
+        display:none;
+    }
+    .page-header{
+        width:100%;
+        display:flex;
+        flex-direction:column;
+        margin-top:5%;
+    }
+    .header-text h1{
+        font-size:4rem;
+    }
+    .website, .window-services{
+        width:100%;
+        padding:0 4%;
+    }
+
+}
+
+@media (max-width:500px){
+    .website{
+        padding:0;
+    }
+    .logo-container{
+        width:100%;
+        padding:0;
+        margin:4% 0;
+        display:flex;     
+    }
+    .logo{
+        padding:0;
+        margin:0;
+    }
+    .nav-links{
+        padding:0;  
+    }
+    .anchor-links, .header-top-links{
+        width:100%;
+        display:flex;
+        flex-direction:column;    
+    }
+    .anchor-links a, .header-top-links a{
+        width:100%;
+        border-bottom:1px solid grey;
+        text-align:center;
+        padding:4% 0;
+        font-size:100%;
+    }
+    .anchor-links:first-child, .header-top-links:first-child{
+        border-top:1px solid grey;
+    }
+    .page-header, .mid-section-info, footer{
+        margin:0 4%;
+    }
+    .page-header{
+        padding:10% 0% 15% 0%;
+    }
+    .mid-section-top, .mid-section-bot{
+        display:flex;
+        flex-direction:column;
+    }
+    .features, .about, .services, .product, .vision{
+        width:100%;
+    }
+    .features{
+        margin-top:6%;
+    }
+    .about{
+        margin-bottom:5%;
+    }
+    .vision{
+        margin-bottom:3%;
+    }
+    .learn-more{
+        display:flex;
+        flex-direction:column;
+    }
+    .learn-more-tab{
+        width:100%;
+    }
+    .services-footer{
+        display:flex;
+        flex-direction:column-reverse;
+    }
+    .text-footer{
+        margin-top:4%;
+    }
+}
