@@ -275,6 +275,12 @@ header {
 	
 
   }
+  .header-top-links{
+      width:70%;
+      display:flex;
+      justify-content:space-between;
+      align-items:center;
+  }
   .header-top-wrapper a {
 
 	text-decoration:none;
@@ -381,7 +387,7 @@ header {
   }
 @media (max-width:800px){
 
-    .nav-links{
+    .nav-links, .header-top-wrapper{
         display:flex;
         flex-direction:column-reverse;
         padding:0;
@@ -398,11 +404,14 @@ header {
         margin:20% 0;
         padding:0;
     }
-    .anchor-links{
+    .anchor-links, .header-top-links{
         width:95%;
         display:flex;
         justify-content:space-around;
         align-items:center;
+    }
+    .header-top-links{
+        margin:0 0 4% 0;
     }
     .anchor-links a{
         font-size:75%;
@@ -419,7 +428,7 @@ header {
     .header-text h1{
         font-size:4rem;
     }
-    .website{
+    .website, .window-services{
         width:100%;
         padding:0 4%;
     }
@@ -443,19 +452,19 @@ header {
     .nav-links{
         padding:0;  
     }
-    .anchor-links{
+    .anchor-links, .header-top-links{
         width:100%;
         display:flex;
         flex-direction:column;    
     }
-    .anchor-links a{
+    .anchor-links a, .header-top-links a{
         width:100%;
         border-bottom:1px solid grey;
         text-align:center;
         padding:4% 0;
         font-size:100%;
     }
-    .anchor-links:first-child{
+    .anchor-links:first-child, .header-top-links:first-child{
         border-top:1px solid grey;
     }
     .page-header, .mid-section-info, footer{
@@ -480,5 +489,18 @@ header {
     .vision{
         margin-bottom:3%;
     }
-   
+    .learn-more{
+        display:flex;
+        flex-direction:column;
+    }
+    .learn-more-tab{
+        width:100%;
+    }
+    .services-footer{
+        display:flex;
+        flex-direction:column-reverse;
+    }
+    .text-footer{
+        margin-top:4%;
+    }
 }
